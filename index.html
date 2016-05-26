@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>Wizard Magic</title>
+<meta name="viewport" 
+  content="width=device-width, initial-scale=1.0, user-scalable=no">
+<style>
+#draggable { width: 57px; height: 57px; padding: 0.5em; }
+#container{
+	background-image: url(gb_test.jpg);
+	width: 1024px;
+	height: 768px;
+}
+.player{
+	position:absolute;
+}
+#green_player{
+	top:520;
+	left:190;
+}
+#blue_player{
+	top:520;
+	left:320;
+}
+#orange_player{
+	top:600;
+	left:320;
+}
+#purple_player{
+	top:600;
+	left:190;
+}
+#red_player{
+	top:560;
+	left:255;
+}
+#yellow_player{
+	top:480;
+	left:255;
+}
+</style>
+<script src="jquery-1.7.2.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="jquery.ui.touch-punch.min.js"></script>
+<script>
+  $(function() {
+          $( "#green_player" ).draggable();
+		  $( "#blue_player" ).draggable();
+		  $( "#yellow_player" ).draggable();
+		  $( "#red_player" ).draggable();
+		  $( "#purple_player" ).draggable();
+		  $( "#orange_player" ).draggable();
+        });
+</script>
+
+</head>
+<body onload='window_onload();'>
+<div id="container">
+<img src="green_player.png" id="green_player" class="player">
+<img src="blue_player.png" id="blue_player" class="player">
+<img src="orange_player.png" id="orange_player" class="player">
+<img src="purple_player.png" id="purple_player" class="player">
+<img src="red_player.png" id="red_player" class="player">
+<img src="yellow_player.png" id="yellow_player" class="player">
+</div>
+</body>
+
+</html>
