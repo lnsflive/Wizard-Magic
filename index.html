@@ -41,6 +41,11 @@ padding:0;
 	top:480;
 	left:255;
 }
+#restart_btn{
+	position:absolute;
+	top: 650;
+	left:30;
+}
 </style>
 <script src="jquery-1.7.2.min.js"></script>
 <script src="jquery-ui.min.js"></script>
@@ -54,11 +59,14 @@ padding:0;
 		  $( "#purple_player" ).draggable();
 		  $( "#orange_player" ).draggable();
         });
+		
+
 </script>
 
 </head>
 <body onload='window_onload();'>
 <div id="container">
+<img src="restart.png" id="restart_btn" onclick="window.location.reload()">
 <img src="green_player.png" id="green_player" class="player">
 <img src="blue_player.png" id="blue_player" class="player">
 <img src="orange_player.png" id="orange_player" class="player">
