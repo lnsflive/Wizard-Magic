@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+		xmlns:android   = "http://schemas.android.com/apk/res/android"
+        id          = "com.lnsflive.wizardmagic"
+        version     = "1" >
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>Wizard Magic</name>
+
+    <description>
+        The digital boardgame for Wizard Magic.
+    </description>
+	<plugin name="cordova-plugin-whitelist" />
+    <author href="http://jgonzalezy8.aisites.com/" email="lnsflive@gmail.com">
+        Jaime Gonzalez
+    </author>
+	<access origin="http://google.com" subdomains="true" />
+	<access origin="http://play.google.com" subdomains="true" />
+	<icon src="icon.png" />
+	<platform name="android" >
+		<preference name="phonegap-version" value="cli-6.1.0" />
+		<preference name="orientation" value="landscape" />
+		<preference name="fullscreen" value="true" />
+		<preference name="webviewbounce" value="true" />
+		<preference name="permissions" value="none"/>
+		<preference name="android-minSdkVersion" value="14" />
+		<preference name="android-targetSdkVersion" value="15" />
+		<preference name="android-installLocation" value="auto" />
+		<icon src="icon.png" />
+		<supports-screens android:anyDensity="true" android:resizeable="true" 
+			android:smallScreens="true" 
+			android:normalScreens="true" 
+			android:largeScreens="true" 
+			android:xlargeScreens="true" />
+	</platform>
+	
+</widget>
